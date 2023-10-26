@@ -29,15 +29,12 @@ public class Main {
 
         //Задача 2
         System.out.println("\nЗадача 2:\n");
-        int minCost = 200_001;
-        int maxCost = -1;
+        int minCost = arr[arr.length - 1];
+        int maxCost = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (minCost > arr[i]) {
                 minCost = arr[i];
-            }
-        }
-        for (int i = 0; i < arr.length; i++) {
-            if (maxCost < arr[i]) {
+            }else if (maxCost < arr[i]) {
                 maxCost = arr[i];
             }
         }
